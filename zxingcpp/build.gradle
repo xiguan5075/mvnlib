@@ -1,10 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
-    id 'com.github.dcendents.android-maven'
 }
-//https://github.com/xiguan5075/mvnlib
-group='com.github.xiguan5075'
+apply from: "${rootDir.path}/gradle/publish.gradle"
 
 android {
     compileSdkVersion 33

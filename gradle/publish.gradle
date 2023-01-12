@@ -1,0 +1,20 @@
+apply plugin: 'maven-publish'
+
+afterEvaluate {
+    publishing {
+//        singleVariant('release') {
+//            withSourcesJar()
+//            withJavadocJar()
+//        }
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = PROJ_GROUP
+                artifactId = PROJ_ARTIFACTID
+                version = PROJ_VERSION
+
+            }
+        }
+    }
+}
