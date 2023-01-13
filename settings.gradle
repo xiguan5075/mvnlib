@@ -1,3 +1,4 @@
+include ':UdeskSDKUI'
 include ':zxingcpp'
 include ':app'
 rootProject.name = "ZXingCpp"
